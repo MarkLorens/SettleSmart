@@ -12,7 +12,7 @@ const Hero = () => {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="text-center lg:text-left">
             <div className="mb-8">
-              <h1 className="text-5xl font-bold text-seconday mb-6">
+              <h1 className="text-5xl font-bold mb-6">
                 Financial Clarity, Wherever Life Takes You
               </h1>
               <p className="text-xl text-gray-200 mb-8 leading-relaxed">

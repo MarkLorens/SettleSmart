@@ -1,7 +1,7 @@
 import VideoAsset from "../../assets/VideoShowcase.png";
 const VideoShowcase = () => {
   return (
-    <section id="VideoShowcaseSection" className="py-10">
+    <section id="VideoShowcaseSection" className="py-20">
       <div className="max-w-7xl mx-auto px-6 mt-20">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div>
@@ -13,7 +13,7 @@ const VideoShowcase = () => {
           <div className="text-center lg:text-left h-full">
             <div className="mb-8 flex flex-col justify-between h-full space-y-10">
               <div className="space-y-6">
-                <p className="text-3xl font-semibold text-secondary leading-relaxed">
+                <p className="text-3xl font-semibold leading-relaxed">
                   Listen to our expert talk about why this matters.
                 </p>
 
@@ -26,7 +26,7 @@ const VideoShowcase = () => {
                 </p>
               </div>
 
-              <button className="bg-blue text-white px-8 py-4 rounded-lg hover:bg-blue/80 transition-colors text-2xl font-semibold cursor-pointer self-start">
+              <button className="bg-blue text-white px-8 py-4 rounded-lg hover:bg-blue/80 transition-colors text-2xl font-semibold cursor-pointer self-start md:mx-auto">
                 Learn What People Often Ask About
               </button>
             </div>
