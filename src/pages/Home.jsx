@@ -1,4 +1,5 @@
 import Footer from "../components/Footer";
+import CTA from "../components/home/CTA";
 import FAQ from "../components/home/FAQ";
 import Hero from "../components/home/hero";
 import Services from "../components/home/Services";
@@ -10,6 +11,7 @@ const Home = () => {
       <VideoShowcase />
       <Services />
       <FAQ />
+      <CTA />
       <Footer />
     </div>
   );

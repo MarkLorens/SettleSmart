@@ -11,7 +11,7 @@ const Navbar = () => {
           <div id="Logo">
             <img src={Logo} alt="SettleSmart Logo" className="scale-50" />
           </div>
-          <nav id="Items" className="hidden md:flex space-x-8">
+          <nav id="Items" className="hidden md:flex space-x-8 text-lg">
             <a
               href="#"
               className="text-gray-600 hover:text-blue transition-colors"
@@ -31,7 +31,7 @@ const Navbar = () => {
               Customer Review
             </a>
           </nav>
-          <button className="bg-blue text-white px-8 py-4 rounded-4xl hover:bg-gold/80 transition colors font-semibold cursor-pointer">
+          <button className="bg-blue text-white px-8 py-4 rounded-4xl hover:bg-blue/80 transition colors font-semibold cursor-pointer">
             Contact
           </button>
         </div>
