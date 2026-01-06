@@ -13,11 +13,11 @@ const VideoShowcase = () => {
           <div className="text-center lg:text-left h-full">
             <div className="mb-8 flex flex-col justify-between h-full space-y-10">
               <div className="space-y-6">
-                <p className="text-3xl font-semibold leading-relaxed">
+                <p className="text-2xl font-semibold leading-relaxed">
                   Listen to our expert talk about why this matters.
                 </p>
 
-                <p className="text-2xl leading-relaxed">
+                <p className="text-xl leading-relaxed tracking-wider">
                   Living abroad brings opportunity—but it also brings{" "}
                   <span className="text-gold">financial uncertainty.</span> From{" "}
                   <span className="text-gold">investments to retirement</span>{" "}
@@ -26,7 +26,7 @@ const VideoShowcase = () => {
                 </p>
               </div>
 
-              <button className="bg-blue text-white px-8 py-4 rounded-lg hover:bg-blue/80 transition-colors text-2xl font-semibold cursor-pointer self-start md:mx-auto">
+              <button className="bg-blue text-white px-8 py-4 rounded-lg hover:bg-blue/80 transition-colors text-2xl font-semibold cursor-pointer self-start lg:mx-0 sm:mx-auto">
                 Learn What People Often Ask About
               </button>
             </div>

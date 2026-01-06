@@ -2,15 +2,14 @@ import Logo from "../assets/SS-Logo-11.png";
 
 const Navbar = () => {
   return (
-    <section id="header" className="bg-white shadow-sm fixed w-full top-0 z-50">
-      <div className="max-w-7xl mx-auto px-6 py-4">
-        <div className="flex justify-between items-center">
+    <section
+      id="header"
+      className="bg-white shadow-sm fixed w-full top-5 right-1/2 translate-x-1/2 z-50 max-h-20 max-w-6xl px-4 rounded-4xl"
+    >
+      <div className="px-6 max-h-20">
+        <div className="flex justify-between items-center max-h-20">
           <div id="Logo">
-            <img
-              src={Logo}
-              alt="SettleSmart Logo"
-              className="h-full max-h-16"
-            />
+            <img src={Logo} alt="SettleSmart Logo" className="scale-50" />
           </div>
           <nav id="Items" className="hidden md:flex space-x-8">
             <a
@@ -32,7 +31,9 @@ const Navbar = () => {
               Customer Review
             </a>
           </nav>
-          <button>Contact</button>
+          <button className="bg-blue text-white px-8 py-4 rounded-4xl hover:bg-gold/80 transition colors font-semibold cursor-pointer">
+            Contact
+          </button>
         </div>
       </div>
     </section>
