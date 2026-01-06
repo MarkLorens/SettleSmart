@@ -4,13 +4,13 @@ const Hero = () => {
   return (
     <section
       id="HeroSection"
-      className="bg-linear-to-br sm:from-black sm:via-blue sm:to-black py-20"
+      className="bg-linear-to-br sm:from-black sm:via-blue sm:to-black py-1 -mt-10"
     >
       <Navbar />
-      <div className="max-w-7xl mx-auto px-6 md:mt-20 lg:mt-10 text-white tracking-wider">
+      <div className="max-w-7xl mx-auto px-6 sm:mt-50 text-white tracking-wider">
         <div className="grid lg:grid-cols-2 gap-12 sm:gap-0 items-center">
           <div className="text-center lg:text-left">
-            <div className="lg:mb-8 sm:mb-0">
+            <div className="lg:mb-8">
               <h1 className="lg:text-4xl sm:text-2xl font-bold mb-6">
                 Financial Clarity, Wherever Life Takes You
               </h1>
@@ -28,7 +28,7 @@ const Hero = () => {
           <div>
             <img
               src={HeroPic}
-              className="rounded-2xl shadow-2xl origin-right lg:scale-75 sm:scale-50 sm:origin-center"
+              className="rounded-2xl shadow-2xl sm:-mt-10 origin-right lg:scale-65 sm:scale-60 sm:origin-center"
             />
           </div>
         </div>
