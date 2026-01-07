@@ -5,6 +5,7 @@ import FAQ from "../components/home/FAQ";
 import Hero from "../components/home/hero";
 import Services from "../components/home/Services";
 import VideoShowcase from "../components/home/VideoShowcase";
+import WorkFlow from "../components/home/WorkFlow";
 const Home = () => {
   return (
     <div>
@@ -12,6 +13,7 @@ const Home = () => {
       <VideoShowcase />
       <Services />
       <ClientReview />
+      <WorkFlow />
       <FAQ />
       <CTA />
       <Footer />

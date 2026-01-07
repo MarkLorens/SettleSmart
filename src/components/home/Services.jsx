@@ -13,7 +13,7 @@ const Services = () => {
             className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow"
           >
             <div className="w-16 h-16 bg-blue rounded-full flex items-center justify-center mb-6 mx-auto">
-              <i class="fa-solid fa-piggy-bank text-white text-2xl"></i>
+              <i className="fa-solid fa-piggy-bank text-white text-2xl"></i>
             </div>
             <h3 className="text-xl font-bold mb-4">Retirement Planning</h3>
             <p className="text-gray-600">
@@ -26,7 +26,7 @@ const Services = () => {
             className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow"
           >
             <div className="w-16 h-16 bg-blue rounded-full flex items-center justify-center mb-6 mx-auto">
-              <i class="fa-solid fa-money-bill-trend-up text-white text-2xl"></i>
+              <i className="fa-solid fa-money-bill-trend-up text-white text-2xl"></i>
             </div>
             <h3 className="text-xl font-bold mb-4">Investment Management</h3>
             <p className="text-gray-600">
@@ -39,7 +39,7 @@ const Services = () => {
             className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow"
           >
             <div className="w-16 h-16 bg-blue rounded-full flex items-center justify-center mb-6 mx-auto">
-              <i class="fa-solid fa-shield-halved text-white text-2xl"></i>
+              <i className="fa-solid fa-shield-halved text-white text-2xl"></i>
             </div>
             <h3 className="text-xl font-bold mb-4">Insurance Planning</h3>
             <p className="text-gray-600">
@@ -52,7 +52,7 @@ const Services = () => {
             className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow"
           >
             <div className="w-16 h-16 bg-blue rounded-full flex items-center justify-center mb-6 mx-auto">
-              <i class="fa-solid fa-graduation-cap text-white text-2xl"></i>
+              <i className="fa-solid fa-graduation-cap text-white text-2xl"></i>
             </div>
             <h3 className="text-xl font-bold mb-4">Education Funding</h3>
             <p className="text-gray-600">
@@ -65,7 +65,7 @@ const Services = () => {
             className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow"
           >
             <div className="w-16 h-16 bg-blue rounded-full flex items-center justify-center mb-6 mx-auto">
-              <i class="fa-solid fa-file-invoice-dollar text-white text-2xl"></i>
+              <i className="fa-solid fa-file-invoice-dollar text-white text-2xl"></i>
             </div>
             <h3 className="text-xl font-bold mb-4">Tax Optimization</h3>
             <p className="text-gray-600">
@@ -78,7 +78,7 @@ const Services = () => {
             className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow"
           >
             <div className="w-16 h-16 bg-blue rounded-full flex items-center justify-center mb-6 mx-auto">
-              <i class="fa-solid fa-house text-white text-2xl"></i>
+              <i className="fa-solid fa-house text-white text-2xl"></i>
             </div>
             <h3 className="text-xl font-bold mb-4">Estate Planning</h3>
             <p className="text-gray-600">
