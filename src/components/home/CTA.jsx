@@ -6,7 +6,7 @@ const CTA = () => {
       id="CTASection"
       className="relative py-5 text-white max-w-7xl mx-auto rounded-lg shadow-2xl mb-20  bg-linear-to-tr from-black via-blue to-black"
     >
-      <div className="max-w-4xl mx-auto px-1">
+      <div className="max-w-5xl mx-auto px-1">
         <div className="grid lg:grid-cols-2 gap-12 items-center justify-between">
           <div className="text-center lg:text-left h-full max-h-87.5">
             <div className="mb-8 flex flex-col justify-between h-full space-y-10">
@@ -30,7 +30,7 @@ const CTA = () => {
           <div>
             <img
               src={CTAPicture}
-              className="rounded-2xl shadow-2xl scale-y-75 origin-right h-full w-full"
+              className="rounded-2xl shadow-2xl scale-y-70"
             />
           </div>
         </div>

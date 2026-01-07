@@ -7,8 +7,8 @@ const Hero = () => {
       className="bg-linear-to-br from-black via-blue to-black py-1 -mt-10 max-h-full"
     >
       <Navbar />
-      <div className="max-w-7xl mx-auto text-white tracking-wider">
-        <div className="grid lg:grid-cols-2 sm:gap-0 justify-between items-center lg:mt-10 sm:mt-50">
+      <div className="max-w-6xl py-1 mx-auto text-white tracking-wider">
+        <div className="grid lg:grid-cols-2 sm:gap-0 items-center lg:mt-15 sm:mt-50">
           <div className="text-center lg:text-left">
             <div className="lg:mb-8">
               <h1 className="lg:text-4xl sm:text-2xl font-bold mb-6">
@@ -28,7 +28,7 @@ const Hero = () => {
           <div>
             <img
               src={HeroPic}
-              className="rounded-2xl shadow-2xl scale-60 sm:-mt-10"
+              className="rounded-2xl shadow-2xl scale-60 sm:-mt-10 lg:origin-right sm:origin-center"
             />
           </div>
         </div>
