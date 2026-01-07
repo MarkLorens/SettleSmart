@@ -1,3 +1,8 @@
+import Step1Image from "../../assets/workflow/Step-1.png";
+import Step2Image from "../../assets/workflow/Step-2.png";
+import Step3Image from "../../assets/workflow/Step-3.png";
+import Step4Image from "../../assets/workflow/Step-4.png";
+
 import { useEffect, useRef, useState } from "react";
 
 const WorkFlow = () => {
@@ -43,12 +48,15 @@ const WorkFlow = () => {
             ref={wrapperRef}
             className="max-w-5xl mx-auto relative"
           >
-            <div id="Step-1" className="relative min-h-16 pb-20 z-10">
-              <div className="absolute right-1/2 translate-x-1/2 bg-blue text-white w-16 h-16 rounded-lg flex items-center justify-center">
+            <div
+              id="Step-1"
+              className="relative min-h-16 pb-20 z-10 text-right lg:text-left"
+            >
+              <div className="absolute lg:left-1/2 lg:-translate-x-1/2 bg-blue text-white w-16 h-16 rounded-lg flex items-center justify-center">
                 1
               </div>
-              <div className="grid lg:grid-cols-2 gap-30 justify-center items-center">
-                <div className="space-y-2">
+              <div className="lg:grid lg:grid-cols-2 gap-0 lg:gap-0 justify-center items-center ml-16 lg:ml-0 flex flex-col">
+                <div className="space-y-2 order-1">
                   <h2 className="font-semibold text-xl">
                     Understand <span className="text-gold">your</span> situation
                   </h2>
@@ -59,19 +67,34 @@ const WorkFlow = () => {
                     long-term plans.
                   </p>
                 </div>
-                <div></div>
+                <div className="max-h-75 flex items-center order-2">
+                  <img
+                    src={Step1Image}
+                    alt="Step 1 Illustration"
+                    className="scale-50 rounded-xl"
+                  />
+                </div>
               </div>
             </div>
-            <div id="Step-2" className="relative min-h-16 pb-20 z-10">
+            <div
+              id="Step-2"
+              className="relative min-h-16 pb-20 z-10 text-right lg:text-left"
+            >
               <div
                 ref={step1Ref}
-                className="absolute right-1/2 translate-x-1/2 bg-blue text-white w-16 h-16 rounded-lg flex items-center justify-center"
+                className="absolute lg:left-1/2 lg:-translate-x-1/2 bg-blue text-white w-16 h-16 rounded-lg flex items-center justify-center"
               >
                 2
               </div>
-              <div className="grid lg:grid-cols-2 gap-30 justify-center items-center">
-                <div></div>
-                <div className="space-y-2">
+              <div className="lg:grid lg:grid-cols-2 gap-0 lg:gap-30 justify-center items-center ml-16 lg:ml-0 flex flex-col">
+                <div className="max-h-75 flex items-center order-2">
+                  <img
+                    src={Step2Image}
+                    alt="Step 2 Illustration"
+                    className="scale-50 rounded-xl"
+                  />
+                </div>
+                <div className="space-y-2 order-1">
                   <h2 className="font-semibold text-xl">
                     Analyze the details that{" "}
                     <span className="text-gold">matter</span>
@@ -85,12 +108,15 @@ const WorkFlow = () => {
                 </div>
               </div>
             </div>
-            <div id="Step-3" className="relative min-h-16 pb-20 z-10">
-              <div className="absolute right-1/2 translate-x-1/2 bg-blue text-white w-16 h-16 rounded-lg flex items-center justify-center">
+            <div
+              id="Step-3"
+              className="relative min-h-16 pb-20 z-10 text-right lg:text-left"
+            >
+              <div className="absolute lg:left-1/2 lg:-translate-x-1/2 bg-blue text-white w-16 h-16 rounded-lg flex items-center justify-center">
                 3
               </div>
-              <div className="grid lg:grid-cols-2 gap-30 justify-center items-center">
-                <div className="space-y-2">
+              <div className="lg:grid lg:grid-cols-2 gap-0 lg:gap-30 justify-center items-center ml-16 lg:ml-0 flex flex-col">
+                <div className="space-y-2 order-1">
                   <h2 className="font-semibold text-xl">
                     Create a <span className="text-gold">tailored</span>{" "}
                     strategy
@@ -102,16 +128,31 @@ const WorkFlow = () => {
                     adapt as your life evolves.
                   </p>
                 </div>
-                <div></div>
+                <div className="max-h-75 flex items-center order-2">
+                  <img
+                    src={Step3Image}
+                    alt="Step 3 Illustration"
+                    className="scale-50 rounded-xl"
+                  />
+                </div>
               </div>
             </div>
-            <div id="Step-4" className="relative min-h-16 pb-20 z-10">
-              <div className="absolute right-1/2 translate-x-1/2 bg-blue text-white w-16 h-16 rounded-lg flex items-center justify-center">
+            <div
+              id="Step-4"
+              className="relative min-h-16 pb-20 z-10 text-right lg:text-left"
+            >
+              <div className="absolute lg:left-1/2 lg:-translate-x-1/2 bg-blue text-white w-16 h-16 rounded-lg flex items-center justify-center">
                 4
               </div>
-              <div className="grid lg:grid-cols-2 gap-30 justify-center items-center">
-                <div></div>
-                <div className="space-y-2">
+              <div className="lg:grid lg:grid-cols-2 gap-0 lg:gap-30 justify-center items-center ml-16 lg:ml-0 flex flex-col">
+                <div className="max-h-75 flex items-center order-2">
+                  <img
+                    src={Step4Image}
+                    alt="Step 4 Illustration"
+                    className="scale-50 rounded-xl"
+                  />
+                </div>
+                <div className="space-y-2 order-1">
                   <h2 className="font-semibold text-xl">
                     We
                     <span className="text-gold"> support you</span> over the
@@ -128,7 +169,7 @@ const WorkFlow = () => {
             </div>
             <div
               id="ProcessBar"
-              className="w-1 h-full absolute bg-blue/40 top-0 right-1/2 translate-x-1/2 rounded-lg overflow-hidden"
+              className="w-1 h-full absolute bg-blue/40 top-0 left-8 lg:left-1/2 lg:-translate-x-1/2 rounded-lg overflow-hidden"
             >
               <div
                 className="w-full bg-blue transition-[height] duration-1000 ease-out"
