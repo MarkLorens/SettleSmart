@@ -4,7 +4,7 @@ const Navbar = () => {
   return (
     <section
       id="header"
-      className="bg-white shadow-sm fixed w-full top-5 right-1/2 translate-x-1/2 z-50 max-h-20 max-w-6xl px-4 rounded-4xl"
+      className="bg-white shadow-sm fixed w-full top-5 right-1/2 translate-x-1/2 z-50 max-h-20 max-w-7xl px-4 rounded-4xl"
     >
       <div className="px-6 max-h-20">
         <div className="flex justify-between items-center max-h-20">

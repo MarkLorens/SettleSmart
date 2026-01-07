@@ -4,7 +4,7 @@ const CTA = () => {
   return (
     <section
       id="CTASection"
-      className="relative py-5 text-white max-w-7xl mx-auto rounded-lg shadow-2xl mb-20  bg-linear-to-tr sm:from-black sm:via-blue sm:to-black"
+      className="relative py-5 text-white max-w-7xl mx-auto rounded-lg shadow-2xl mb-20  bg-linear-to-tr from-black via-blue to-black"
     >
       <div className="max-w-4xl mx-auto px-1">
         <div className="grid lg:grid-cols-2 gap-12 items-center justify-between">
@@ -22,7 +22,7 @@ const CTA = () => {
                 </ul>
               </div>
 
-              <button className="bg-gold text-white px-8 py-4 rounded-lg hover:bg-gold/80 transition-colors text-lg font-semibold cursor-pointer self-start lg:mx-0 sm:mx-auto">
+              <button className="bg-gold text-white px-8 py-4 rounded-lg hover:bg-gold/80 transition-colors text-lg font-semibold cursor-pointer self-start mx-auto lg:mx-0">
                 Book a Consultation
               </button>
             </div>
