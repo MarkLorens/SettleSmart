@@ -10,7 +10,7 @@ const VideoShowcase = () => {
               className="h-auto w-full max-h-128 object-cover rounded-2xl shadow-2xl"
             />
           </div>
-          <div className="text-center lg:text-left h-full">
+          <div className="text-center lg:text-left h-full font-montserrat">
             <div className="mb-8 flex flex-col justify-between h-full space-y-10">
               <div className="space-y-6">
                 <p className="text-2xl font-semibold leading-relaxed">

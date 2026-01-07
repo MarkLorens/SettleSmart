@@ -4,30 +4,31 @@ const Navbar = () => {
   return (
     <section
       id="header"
-      className="bg-white shadow-sm fixed w-full top-5 right-1/2 translate-x-1/2 z-50 max-h-20 max-w-7xl px-4 rounded-4xl"
+      className="bg-white shadow-sm fixed w-full top-5 right-1/2 translate-x-1/2 z-50 max-h-20 max-w-7xl px-4 rounded-4xl font-oswald "
     >
       <div className="px-6 max-h-20">
         <div className="flex justify-between items-center max-h-20">
           <div id="Logo">
-            <img src={Logo} alt="SettleSmart Logo" className="scale-50" />
+            <img
+              src={Logo}
+              alt="SettleSmart Logo"
+              className="scale-50 cursor-pointer"
+            />
           </div>
-          <nav id="Items" className="hidden md:flex space-x-8 text-lg">
+          <nav
+            id="Items"
+            className="hidden md:flex space-x-8 text-xl tracking-wider font-semibold"
+          >
             <a
               href="#"
-              className="text-gray-600 hover:text-blue transition-colors"
+              className=" hover:text-gray-800 transition-colors text-gold underline"
             >
               Home
             </a>
-            <a
-              href="#"
-              className="text-gray-600 hover:text-blue transition-colors"
-            >
+            <a href="#" className=" hover:text-gray-800 transition-colors">
               About
             </a>
-            <a
-              href="#"
-              className="text-gray-600 hover:text-blue transition-colors"
-            >
+            <a href="#" className=" hover:text-gray-800 transition-colors">
               Customer Review
             </a>
           </nav>

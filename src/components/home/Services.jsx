@@ -3,7 +3,7 @@ const Services = () => {
     <section id="Services-Section" className="py-20 bg-gray-50">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold mb-6">
+          <h2 className="text-4xl font-bold mb-6 font-oswald tracking-wide">
             What <span className="text-gold">SettleSmart</span> Provides
           </h2>
         </div>
@@ -16,7 +16,7 @@ const Services = () => {
               <i className="fa-solid fa-piggy-bank text-white text-2xl"></i>
             </div>
             <h3 className="text-xl font-bold mb-4">Retirement Planning</h3>
-            <p className="text-gray-600">
+            <p className="text-gray-600 font-montserrat">
               Strategic retirement planning to ensure you can maintain your
               lifestyle after you stadaop working.
             </p>
@@ -29,7 +29,7 @@ const Services = () => {
               <i className="fa-solid fa-money-bill-trend-up text-white text-2xl"></i>
             </div>
             <h3 className="text-xl font-bold mb-4">Investment Management</h3>
-            <p className="text-gray-600">
+            <p className="text-gray-600 font-montserrat">
               Personalized investment strategies designed to grow your wealth
               while managing risk effectively.
             </p>
@@ -42,7 +42,7 @@ const Services = () => {
               <i className="fa-solid fa-shield-halved text-white text-2xl"></i>
             </div>
             <h3 className="text-xl font-bold mb-4">Insurance Planning</h3>
-            <p className="text-gray-600">
+            <p className="text-gray-600 font-montserrat">
               Comprehensive insurance solutions to protect you and your family
               from unexpected events.
             </p>
@@ -55,7 +55,7 @@ const Services = () => {
               <i className="fa-solid fa-graduation-cap text-white text-2xl"></i>
             </div>
             <h3 className="text-xl font-bold mb-4">Education Funding</h3>
-            <p className="text-gray-600">
+            <p className="text-gray-600 font-montserrat">
               Smart strategies to save for your children's education without
               compromising your retirement.
             </p>
@@ -68,7 +68,7 @@ const Services = () => {
               <i className="fa-solid fa-file-invoice-dollar text-white text-2xl"></i>
             </div>
             <h3 className="text-xl font-bold mb-4">Tax Optimization</h3>
-            <p className="text-gray-600">
+            <p className="text-gray-600 font-montserrat">
               Strategic tax planning to minimize your tax burden and maximize
               your after-tax income.
             </p>
@@ -81,7 +81,7 @@ const Services = () => {
               <i className="fa-solid fa-house text-white text-2xl"></i>
             </div>
             <h3 className="text-xl font-bold mb-4">Estate Planning</h3>
-            <p className="text-gray-600">
+            <p className="text-gray-600 font-montserrat">
               Ensure your assets are distributed according to your wishes while
               minimizing estate taxes.
             </p>

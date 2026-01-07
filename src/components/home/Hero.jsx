@@ -14,7 +14,7 @@ const Hero = () => {
               <h1 className="lg:text-4xl text-2xl font-bold mb-6">
                 Financial Clarity, Wherever Life Takes You
               </h1>
-              <p className="lg:text-xl text-lg text-gray-200 mb-8 leading-relaxed">
+              <p className="lg:text-xl text-lg text-gray-200 mb-8 leading-relaxed font-montserrat">
                 Personalized financial advice for expats navigating{" "}
                 <span className="text-gold">
                   investments, taxes, and long-term planning across borders.

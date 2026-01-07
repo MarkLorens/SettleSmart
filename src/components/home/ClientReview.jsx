@@ -3,7 +3,9 @@ const ClientReview = () => {
     <section id="ClientReviewSection" className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold mb-6">What Our Clients Say</h2>
+          <h2 className="text-4xl font-bold mb-6 font-oswald tracking-wide">
+            What Our Clients Say
+          </h2>
           <p className="text-xl text-gray-600">
             Stories from our satisfied clients
           </p>
@@ -21,7 +23,7 @@ const ClientReview = () => {
               <i className="fa-solid fa-star text-gold"></i>
               <i className="fa-solid fa-star text-gold"></i>
             </div>
-            <p className="tracking-wider font-light">
+            <p className="tracking-wider font-light font-montserrat">
               Sion helped us plan for retirement and we're now on track to
               retire 5 years earlier than expected. His expertise is invaluable.
             </p>
@@ -38,7 +40,7 @@ const ClientReview = () => {
               <i className="fa-solid fa-star text-gold"></i>
               <i className="fa-regular fa-star text-white"></i>
             </div>
-            <p className="tracking-wider font-light">
+            <p className="tracking-wider font-light font-montserrat">
               The investment strategy Sion created for us has outperformed the
               market consistently. We couldn't be happier!
             </p>
@@ -55,7 +57,7 @@ const ClientReview = () => {
               <i className="fa-solid fa-star text-gold"></i>
               <i className="fa-solid fa-star text-gold"></i>
             </div>
-            <p className="tracking-wider font-light">
+            <p className="tracking-wider font-light font-montserrat">
               Professional, knowledgeable, and always available when we need
               advice. Sion truly cares about our financial success.
             </p>

@@ -20,30 +20,36 @@ const Footer = () => {
             />
           </div>
           <div>
-            <h4 className="font-semibold text-xl md:text-2xl mb-6 md:mb-8">
+            <h4 className="font-semibold text-xl md:text-2xl mb-6 md:mb-8 font-oswald tracking-wide">
               Quick Links
             </h4>
-            <ul className="space-y-3 md:space-y-4 text-lg md:text-xl text-gray-400">
-              <li>Home</li>
-              <li>About</li>
-              <li>Customer Review</li>
+            <ul className="space-y-3 md:space-y-4 text-lg md:text-xl text-gray-400 font-montserrat">
+              <li className="cursor-pointer hover:text-white transition-colors">
+                Home
+              </li>
+              <li className="cursor-pointer hover:text-white transition-colors">
+                About
+              </li>
+              <li className="cursor-pointer hover:text-white transition-colors">
+                Customer Review
+              </li>
             </ul>
           </div>
           <div>
-            <h4 className="font-semibold text-xl md:text-2xl mb-6 md:mb-8">
+            <h4 className="font-semibold text-xl md:text-2xl mb-6 md:mb-8 font-oswald tracking-wide">
               Where to Find Us
             </h4>
-            <div className="space-y-3 md:space-y-4 text-lg md:text-xl text-gray-400">
-              <p>
+            <div className="space-y-3 md:space-y-4 text-lg md:text-xl text-gray-400 font-montserrat">
+              <p className="cursor-pointer hover:text-white transition-colors">
                 <i className="fa-solid fa-address-book mr-4"></i>Contact Number
               </p>
-              <p>
+              <p className="cursor-pointer hover:text-white transition-colors">
                 <i className="fa-solid fa-envelope mr-4"></i>Email
               </p>
-              <p>
+              <p className="cursor-pointer hover:text-white transition-colors">
                 <i className="fa-brands fa-instagram mr-4"></i>Instagram
               </p>
-              <p>
+              <p className="cursor-pointer hover:text-white transition-colors">
                 <i className="fa-solid fa-location-dot mr-4"></i>
                 Physical Address
               </p>

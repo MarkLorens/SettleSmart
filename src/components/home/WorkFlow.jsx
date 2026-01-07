@@ -39,7 +39,9 @@ const WorkFlow = () => {
     <section id="WorkFlowSection" className="py-20 bg-gray-100">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold mb-6">How it Works</h2>
+          <h2 className="text-4xl font-bold mb-6 font-oswald tracking-wide">
+            How it Works
+          </h2>
           <p className="text-xl text-gray-600">Our 4-Step Flow</p>
         </div>
         <div id="FlowLayout">
@@ -55,7 +57,7 @@ const WorkFlow = () => {
               <div className="absolute lg:left-1/2 lg:-translate-x-1/2 bg-blue text-white w-16 h-16 rounded-lg flex items-center justify-center">
                 1
               </div>
-              <div className="lg:grid lg:grid-cols-2 gap-0 lg:gap-0 justify-center items-center ml-16 lg:ml-0 flex flex-col">
+              <div className="lg:grid lg:grid-cols-2 gap-0 lg:gap-30 justify-center ml-16 lg:ml-0 flex flex-col">
                 <div className="space-y-2 order-1">
                   <h2 className="font-semibold text-xl">
                     Understand <span className="text-gold">your</span> situation
@@ -86,15 +88,15 @@ const WorkFlow = () => {
               >
                 2
               </div>
-              <div className="lg:grid lg:grid-cols-2 gap-0 lg:gap-30 justify-center items-center ml-16 lg:ml-0 flex flex-col">
-                <div className="max-h-75 flex items-center order-2">
+              <div className="lg:grid lg:grid-cols-2 gap-0 lg:gap-30 justify-center ml-16 lg:ml-0 flex flex-col">
+                <div className="max-h-75 flex items-center order-2 lg:order-1">
                   <img
                     src={Step2Image}
                     alt="Step 2 Illustration"
                     className="scale-50 rounded-xl"
                   />
                 </div>
-                <div className="space-y-2 order-1">
+                <div className="space-y-2 order-1 lg:order-2">
                   <h2 className="font-semibold text-xl">
                     Analyze the details that{" "}
                     <span className="text-gold">matter</span>
@@ -115,7 +117,7 @@ const WorkFlow = () => {
               <div className="absolute lg:left-1/2 lg:-translate-x-1/2 bg-blue text-white w-16 h-16 rounded-lg flex items-center justify-center">
                 3
               </div>
-              <div className="lg:grid lg:grid-cols-2 gap-0 lg:gap-30 justify-center items-center ml-16 lg:ml-0 flex flex-col">
+              <div className="lg:grid lg:grid-cols-2 gap-0 lg:gap-30 justify-center ml-16 lg:ml-0 flex flex-col">
                 <div className="space-y-2 order-1">
                   <h2 className="font-semibold text-xl">
                     Create a <span className="text-gold">tailored</span>{" "}
@@ -144,15 +146,15 @@ const WorkFlow = () => {
               <div className="absolute lg:left-1/2 lg:-translate-x-1/2 bg-blue text-white w-16 h-16 rounded-lg flex items-center justify-center">
                 4
               </div>
-              <div className="lg:grid lg:grid-cols-2 gap-0 lg:gap-30 justify-center items-center ml-16 lg:ml-0 flex flex-col">
-                <div className="max-h-75 flex items-center order-2">
+              <div className="lg:grid lg:grid-cols-2 gap-0 lg:gap-30 justify-center ml-16 lg:ml-0 flex flex-col">
+                <div className="max-h-75 flex items-center order-2 lg:order-1">
                   <img
                     src={Step4Image}
                     alt="Step 4 Illustration"
                     className="scale-50 rounded-xl"
                   />
                 </div>
-                <div className="space-y-2 order-1">
+                <div className="space-y-2 order-1 lg:order-2">
                   <h2 className="font-semibold text-xl">
                     We
                     <span className="text-gold"> support you</span> over the
