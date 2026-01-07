@@ -26,17 +26,19 @@ const Navbar = () => {
             id="Items"
             className="hidden md:flex space-x-8 text-xl tracking-wider font-semibold"
           >
-            <a className="hover:text-gray-800 transition-colors text-gold underline">
+            <a className="hover:text-gray-800 transition-colors text-gold underline cursor-pointer">
               Home
             </a>
-            <a className="hover:text-gray-800 transition-colors">About</a>
-            <a className="hover:text-gray-800 transition-colors">
+            <a className="hover:text-gray-800 transition-colors cursor-pointer">
+              About
+            </a>
+            <a className="hover:text-gray-800 transition-colors cursor-pointer">
               Customer Review
             </a>
           </nav>
           <button
             className="hidden md:block bg-blue text-white px-8 py-4 rounded-4xl
-                             hover:bg-blue/80 transition font-semibold"
+                             hover:bg-blue/80 transition font-semibold cursor-pointer"
           >
             Contact
           </button>
