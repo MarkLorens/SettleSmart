@@ -26,7 +26,7 @@ const VideoShowcase = () => {
                 </p>
               </div>
 
-              <button className="bg-blue text-white px-8 py-4 rounded-lg hover:bg-blue/80 transition-colors text-2xl font-semibold cursor-pointer self-start lg:mx-0 sm:mx-auto">
+              <button className="bg-blue text-white px-8 py-4 rounded-lg hover:bg-blue/80 transition-colors text-lg font-semibold cursor-pointer self-start mx-auto lg:mx-0">
                 Learn What People Often Ask About
               </button>
             </div>

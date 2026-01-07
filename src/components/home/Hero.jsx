@@ -8,19 +8,19 @@ const Hero = () => {
     >
       <Navbar />
       <div className="max-w-6xl py-1 mx-auto text-white tracking-wider">
-        <div className="grid lg:grid-cols-2 sm:gap-0 items-center lg:mt-15 sm:mt-50">
+        <div className="grid lg:grid-cols-2 sm:gap-0 items-center lg:mt-15 mt-50">
           <div className="text-center lg:text-left">
             <div className="lg:mb-8">
-              <h1 className="lg:text-4xl sm:text-2xl font-bold mb-6">
+              <h1 className="lg:text-4xl text-2xl font-bold mb-6">
                 Financial Clarity, Wherever Life Takes You
               </h1>
-              <p className="lg:text-xl sm:text-lg text-gray-200 mb-8 leading-relaxed">
+              <p className="lg:text-xl text-lg text-gray-200 mb-8 leading-relaxed">
                 Personalized financial advice for expats navigating{" "}
                 <span className="text-gold">
                   investments, taxes, and long-term planning across borders.
                 </span>
               </p>
-              <button className="bg-gold px-8 py-4 rounded-lg hover:bg-gold/80 transition colors lg:text-2xl sm:text-lg font-semibold cursor-pointer">
+              <button className="bg-gold px-8 py-4 rounded-lg hover:bg-gold/80 transition colors lg:text-xl text-lg font-semibold cursor-pointer">
                 Schedule a Call
               </button>
             </div>

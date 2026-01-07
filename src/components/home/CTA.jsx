@@ -28,10 +28,7 @@ const CTA = () => {
             </div>
           </div>
           <div>
-            <img
-              src={CTAPicture}
-              className="rounded-2xl shadow-2xl scale-y-70"
-            />
+            <img src={CTAPicture} className="rounded-2xl shadow-2xl scale-75" />
           </div>
         </div>
       </div>
