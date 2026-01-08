@@ -1,4 +1,3 @@
-import Logo from "../assets/SS-Logo-11.png";
 import SmallLogo from "../assets/SS-Logo-Footer.png";
 import { useState } from "react";
 
@@ -8,18 +7,15 @@ const Navbar = () => {
   return (
     <section
       id="header"
-      className="md:bg-white lg:shadow-sm fixed w-full top-5 right-1/2 translate-x-1/2 z-50
+      className="shadow-[0px_0px_28px_-4px_rgba(234,_179,_8,_0.5)] text-white fixed w-full top-5 right-1/2 translate-x-1/2 z-50
                  max-h-20 md:max-w-7xl px-4 rounded-4xl font-oswald bg-blue/90 backdrop-blur-md max-w-sm md:backdrop-blur-none"
     >
       <div className="px-6 max-h-20 relative">
         <div className="flex justify-between items-center max-h-20">
-          <div id="Logo" className="hidden md:block">
-            <img src={Logo} className="scale-50 cursor-pointer" />
-          </div>
-          <div id="Logo" className="md:hidden">
+          <div id="Logo">
             <img
               src={SmallLogo}
-              className="scale-45 origin-left cursor-pointer"
+              className="scale-40 origin-left cursor-pointer"
             />
           </div>
           <nav
@@ -37,8 +33,8 @@ const Navbar = () => {
             </a>
           </nav>
           <button
-            className="hidden md:block bg-blue text-white px-8 py-4 rounded-4xl
-                             hover:bg-blue/80 transition font-semibold cursor-pointer"
+            className="hidden md:block bg-gold text-white px-8 py-4 rounded-4xl
+                             hover:bg-gold/80 transition font-semibold cursor-pointer"
           >
             Contact
           </button>
