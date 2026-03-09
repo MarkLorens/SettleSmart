@@ -25,13 +25,13 @@ const Navbar = () => {
           >
             <Link
               className="hover:text-2xl transition-all text-gold underline cursor-pointer"
-              to="/SettleSmart/"
+              to="/"
             >
               Home
             </Link>
             <Link
               className="hover:text-2xl transition-all cursor-pointer"
-              to="/SettleSmart/about"
+              to="/about"
             >
               About
             </Link>
@@ -63,13 +63,13 @@ const Navbar = () => {
                        flex flex-col gap-4 p-6 text-lg font-semibold text-gray-800"
           >
             <Link
-              to="/SettleSmart/"
+              to="/"
               className="hover:text-2xl text-gold cursor-pointer transition-colors"
             >
               Home
             </Link>
             <Link
-              to="/SettleSmart/about"
+              to="/about"
               className="hover:text-2xl cursor-pointer transition-colors"
             >
               About
