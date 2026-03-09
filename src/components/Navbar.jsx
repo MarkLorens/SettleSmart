@@ -1,5 +1,6 @@
 import SmallLogo from "../assets/SS-Logo-Footer.png";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
@@ -22,13 +23,19 @@ const Navbar = () => {
             id="Items"
             className="hidden md:flex space-x-8 text-xl tracking-wider font-semibold"
           >
-            <a className="hover:text-gray-800 transition-colors text-gold underline cursor-pointer">
+            <Link
+              className="hover:text-2xl transition-all text-gold underline cursor-pointer"
+              to="/SettleSmart/"
+            >
               Home
-            </a>
-            <a className="hover:text-gray-800 transition-colors cursor-pointer">
+            </Link>
+            <Link
+              className="hover:text-2xl transition-all cursor-pointer"
+              to="/SettleSmart/about"
+            >
               About
-            </a>
-            <a className="hover:text-gray-800 transition-colors cursor-pointer">
+            </Link>
+            <a className="hover:text-2xl transition-all cursor-pointer">
               Customer Review
             </a>
           </nav>
@@ -53,15 +60,21 @@ const Navbar = () => {
         {open && (
           <div
             className="absolute right-6 top-25 w-56 bg-white rounded-2xl shadow-lg
-                       flex flex-col gap-4 p-6 text-lg font-semibold"
+                       flex flex-col gap-4 p-6 text-lg font-semibold text-gray-800"
           >
-            <a className="hover:text-gray-800 text-gold cursor-pointer transition-colors">
+            <Link
+              to="/SettleSmart/"
+              className="hover:text-2xl text-gold cursor-pointer transition-colors"
+            >
               Home
-            </a>
-            <a className="hover:text-gray-800 cursor-pointer transition-colors">
+            </Link>
+            <Link
+              to="/SettleSmart/about"
+              className="hover:text-2xl cursor-pointer transition-colors"
+            >
               About
-            </a>
-            <a className="hover:text-gray-800 cursor-pointer transition-colors">
+            </Link>
+            <a className="hover:text-2xl cursor-pointer transition-colors">
               Customer Review
             </a>
 

@@ -1,10 +1,15 @@
 import Home from "./pages/Home";
+import About from "./pages/About";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
-    <>
-      <Home />
-    </>
+    <BrowserRouter>
+    <Routes>
+      <Route path="/SettleSmart/" element={<Home /> }/>
+      <Route path="/SettleSmart/about/" element={<About /> }/>
+      </Routes>
+      </BrowserRouter>
   );
 }
 
