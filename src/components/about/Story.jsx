@@ -16,7 +16,7 @@ const Story = () => {
               </div>
             </div>
             <div>
-              <div>
+              <div className="font-montserrat">
                 <p className="text-lg text-gray-700 leading-relaxed mb-6">
                   I know exactly what it feels like to be an expat navigating a
                   foreign financial system. Years ago, I found myself in a new

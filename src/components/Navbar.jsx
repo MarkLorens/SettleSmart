@@ -8,7 +8,7 @@ const Navbar = () => {
   return (
     <section
       id="header"
-      className="shadow-[0px_0px_28px_-4px_rgba(234,_179,_8,_0.5)] text-white fixed w-full top-5 right-1/2 translate-x-1/2 z-50
+      className="shadow-[0px_0px_28px_-4px_rgba(234,179,8,0.5)] text-white fixed w-full top-5 right-1/2 translate-x-1/2 z-50
                  max-h-20 md:max-w-7xl px-4 rounded-4xl font-oswald bg-blue/90 backdrop-blur-md max-w-sm md:backdrop-blur-none"
     >
       <div className="px-6 max-h-20 relative">
