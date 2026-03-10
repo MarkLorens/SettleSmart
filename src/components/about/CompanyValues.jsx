@@ -21,7 +21,9 @@ const CompanyValues = () => {
             <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-6">
               <i className="fa-solid fa-heart text-3xl text-blue-800"></i>
             </div>
-            <h3 className="text-xl font-bold text-blue mb-3">Empathy</h3>
+            <h3 className="text-xl font-bold text-blue mb-3 font-montserrat">
+              Empathy
+            </h3>
             <p>
               I've been where you are. I understand the stress and uncertainty
               of expat life.
@@ -34,7 +36,9 @@ const CompanyValues = () => {
             <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mb-6">
               <i className="fa-solid fa-shield-halved text-3xl text-[#329260]"></i>
             </div>
-            <h3 className="text-xl font-bold text-blue mb-3">Integrity</h3>
+            <h3 className="text-xl font-bold text-blue mb-3 font-montserrat">
+              Integrity
+            </h3>
             <p>
               Transparent advice with no hidden agendas. Your interests always
               come first.
@@ -47,7 +51,9 @@ const CompanyValues = () => {
             <div className="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mb-6">
               <i className="fa-solid fa-lightbulb text-3xl text-[#643292]"></i>
             </div>
-            <h3 className="text-xl font-bold text-blue mb-3">Expertise</h3>
+            <h3 className="text-xl font-bold text-blue mb-3 font-montserrat">
+              Expertise
+            </h3>
             <p>
               Continuous learning to stay ahead of international financial
               regulations.
@@ -60,7 +66,9 @@ const CompanyValues = () => {
             <div className="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mb-6">
               <i className="fa-solid fa-handshake text-3xl text-orange-600"></i>
             </div>
-            <h3 className="text-xl font-bold text-blue mb-3">Partnership</h3>
+            <h3 className="text-xl font-bold text-blue mb-3 font-montserrat">
+              Partnership
+            </h3>
             <p>We're in this together. Your sucess is my success.</p>
           </div>
         </div>
