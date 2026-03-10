@@ -8,7 +8,7 @@ const Hero = () => {
       className="bg-linear-to-br from-blue via-[#325092] to-blue text-white py-24 h-[125] flex items-center"
     >
       <Navbar />
-      <div className="max-w-7xl mx-auto mt-10 px-6 w-full">
+      <div className="max-w-7xl mx-auto mt-20 px-6 w-full">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
             <div className=" inline-block bg-blue-800 px-4 py-2 rounded-full text-sm font-semibold mb-6">
