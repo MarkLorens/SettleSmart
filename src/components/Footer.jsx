@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import FooterLogo from "../assets/SS-Logo-Footer.png";
 
 const Footer = () => {
@@ -23,17 +24,26 @@ const Footer = () => {
             <h4 className="font-semibold text-xl md:text-2xl mb-6 md:mb-8 font-oswald tracking-wide">
               Quick Links
             </h4>
-            <ul className="space-y-3 md:space-y-4 text-lg md:text-xl text-gray-400 font-montserrat">
-              <li className="cursor-pointer hover:text-white transition-colors">
+            <div className="flex flex-col space-y-3 md:space-y-4 text-lg md:text-xl text-gray-400 font-montserrat">
+              <Link
+                className="cursor-pointer hover:text-white transition-colors"
+                to={"/"}
+              >
                 Home
-              </li>
-              <li className="cursor-pointer hover:text-white transition-colors">
+              </Link>
+              <Link
+                className="cursor-pointer hover:text-white transition-colors"
+                to={"/about"}
+              >
                 About
-              </li>
-              <li className="cursor-pointer hover:text-white transition-colors">
+              </Link>
+              <Link
+                className="cursor-pointer hover:text-white transition-colors"
+                to={"/customerreview"}
+              >
                 Customer Review
-              </li>
-            </ul>
+              </Link>
+            </div>
           </div>
           <div>
             <h4 className="font-semibold text-xl md:text-2xl mb-6 md:mb-8 font-oswald tracking-wide">

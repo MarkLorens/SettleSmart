@@ -1,6 +1,6 @@
 import SmallLogo from "../assets/SS-Logo-Footer.png";
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
@@ -23,21 +23,33 @@ const Navbar = () => {
             id="Items"
             className="hidden md:flex space-x-8 text-xl tracking-wider font-semibold"
           >
-            <Link
-              className="hover:text-2xl transition-all text-gold underline cursor-pointer"
+            <NavLink
               to="/"
+              className={({ isActive }) =>
+                `hover:text-2xl transition-all cursor-pointer
+                ${isActive ? "text-gold underline" : "text-white"}`
+              }
             >
               Home
-            </Link>
-            <Link
-              className="hover:text-2xl transition-all cursor-pointer"
+            </NavLink>
+            <NavLink
               to="/about"
+              className={({ isActive }) =>
+                `hover:text-2xl transition-all cursor-pointer
+                ${isActive ? "text-gold underline" : "text-white"}`
+              }
             >
               About
-            </Link>
-            <a className="hover:text-2xl transition-all cursor-pointer">
+            </NavLink>
+            <NavLink
+              to="/customerreview"
+              className={({ isActive }) =>
+                `hover:text-2xl transition-all cursor-pointer
+                ${isActive ? "text-gold underline" : "text-white"}`
+              }
+            >
               Customer Review
-            </a>
+            </NavLink>
           </nav>
           <button
             className="hidden md:block bg-gold text-white px-8 py-4 rounded-4xl
