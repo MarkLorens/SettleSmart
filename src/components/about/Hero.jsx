@@ -5,7 +5,7 @@ const Hero = () => {
   return (
     <section
       id="HeroSection"
-      className="bg-linear-to-br from-blue via-[#325092] to-blue text-white py-24 h-[125] flex items-center"
+      className="bg-linear-to-br from-blue via-[#325092] to-blue text-white py-24 flex items-center"
     >
       <Navbar />
       <div className="max-w-7xl mx-auto mt-20 px-6 w-full">
