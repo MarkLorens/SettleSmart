@@ -6,7 +6,7 @@ const CompanyValues = () => {
     >
       <div className="max-w-7xl px-6 mx-auto">
         <div className="text-center mb-16">
-          <h2 className="font-bold text-4xl text-blue mb-4">
+          <h2 className="font-bold text-4xl text-blue mb-4 font-oswald">
             Our <span className="text-gold">Core</span> Values
           </h2>
           <p className="text-xl text-gray-600">
