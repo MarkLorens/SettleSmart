@@ -27,7 +27,7 @@ const Navbar = () => {
               to="/"
               className={({ isActive }) =>
                 `hover:text-2xl transition-all cursor-pointer
-                ${isActive ? "text-gold underline" : "text-white"}`
+                ${isActive ? "text-gold" : "text-white"}`
               }
             >
               Home
@@ -36,7 +36,7 @@ const Navbar = () => {
               to="/about"
               className={({ isActive }) =>
                 `hover:text-2xl transition-all cursor-pointer
-                ${isActive ? "text-gold underline" : "text-white"}`
+                ${isActive ? "text-gold" : "text-white"}`
               }
             >
               About
@@ -45,7 +45,7 @@ const Navbar = () => {
               to="/customerreview"
               className={({ isActive }) =>
                 `hover:text-2xl transition-all cursor-pointer
-                ${isActive ? "text-gold underline" : "text-white"}`
+                ${isActive ? "text-gold" : "text-white"}`
               }
             >
               Customer Review
@@ -74,25 +74,37 @@ const Navbar = () => {
             className="absolute right-6 top-25 w-56 bg-white rounded-2xl shadow-lg
                        flex flex-col gap-4 p-6 text-lg font-semibold text-gray-800"
           >
-            <Link
+            <NavLink
               to="/"
-              className="hover:text-2xl text-gold cursor-pointer transition-colors"
+              className={({ isActive }) =>
+                `hover:text-2xl transition-all cursor-pointer
+                ${isActive ? "text-gold" : "text-black"}`
+              }
             >
               Home
-            </Link>
-            <Link
+            </NavLink>
+            <NavLink
               to="/about"
-              className="hover:text-2xl cursor-pointer transition-colors"
+              className={({ isActive }) =>
+                `hover:text-2xl transition-all cursor-pointer
+                ${isActive ? "text-gold" : "text-black"}`
+              }
             >
               About
-            </Link>
-            <a className="hover:text-2xl cursor-pointer transition-colors">
+            </NavLink>
+            <NavLink
+              to="/customerreview"
+              className={({ isActive }) =>
+                `hover:text-2xl transition-all cursor-pointer
+                ${isActive ? "text-gold" : "text-black"}`
+              }
+            >
               Customer Review
-            </a>
+            </NavLink>
 
             <button
-              className="mt-2 bg-blue text-white py-3 rounded-2xl
-                               hover:bg-blue/80 transition cursor-pointer"
+              className="mt-2 bg-gold text-white py-3 rounded-2xl
+                               hover:bg-gold/80 transition cursor-pointer"
             >
               Contact
             </button>
