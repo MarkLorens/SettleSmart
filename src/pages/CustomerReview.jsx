@@ -1,7 +1,32 @@
+import { useState } from "react";
 import Navbar from "../components/Navbar";
 const CustomerReview = () => {
+  const [rating, setRating] = useState(0);
+  const [hover, setHover] = useState(0);
+  const [name, setName] = useState("");
+  const [review, setReview] = useState("");
+
+  const clearForm = () => {
+    setRating(0);
+    setHover(0);
+    setName("");
+    setReview("");
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    const reviewData = {
+      rating,
+      name,
+      review,
+    };
+
+    console.log(reviewData);
+  };
+
   return (
-    <section id="HeroSection" className="bg-gray-50 flex">
+    <section id="ReviewSection" className="bg-gray-50 flex">
       <Navbar />
       <div className="max-w-4xl mx-auto mt-30 px-4 smL:px-6 lg:px-6 py-8 w-full">
         <div className="mb-8">
@@ -13,21 +38,34 @@ const CustomerReview = () => {
           </p>
         </div>
         <div className="bg-white rounded-xl shadow-sm border border-gray-200 overflow-hidden">
-          <div className="p-6 border-b border-gray-200 bg-gray-50">
-            <h3 className="mb-6 text-xl font-bold">Overall Rating</h3>
-            <div className="flex mb-2 space-x-1">
-              <i className="fa-solid fa-star cursor-pointer text-gray-600"></i>
-              <i className="fa-solid fa-star cursor-pointer text-gray-600"></i>
-              <i className="fa-solid fa-star cursor-pointer text-gray-600"></i>
-              <i className="fa-solid fa-star cursor-pointer text-gray-600"></i>
-              <i className="fa-solid fa-star cursor-pointer text-gray-600"></i>
+          <div className="p-6 border-b border-gray-200 bg-gray-50 z-99">
+            <h3 className="mb-6 text-2xl font-bold">Overall Rating</h3>
+            <div
+              className="flex mb-2 space-x-1"
+              onMouseLeave={() => {
+                setHover(0);
+                console.log("Hit");
+              }}
+            >
+              {[1, 2, 3, 4, 5].map((star) => (
+                <button
+                  key={star}
+                  className={`fa-solid fa-star cursor-pointer text-xl ${
+                    star <= (hover || rating) ? "text-gold" : "text-gray-600"
+                  }`}
+                  onMouseEnter={() => setHover(star)}
+                  onClick={() => setRating(star)}
+                ></button>
+              ))}
             </div>
-            <p className="text-gray-600 text-sm">Rate your experience</p>
+            <p className="text-sm text-gray-600">
+              {rating ? `You rated ${rating}/5` : "Rate the experience"}
+            </p>
           </div>
-          <form action="#" id="ReviewForm" className="p-6">
+          <form action={handleSubmit} id="ReviewForm" className="p-6">
             <div className="mb-6">
               <label
-                for="ReviewName"
+                htmlFor="ReviewName"
                 className="block text-sm font-medium text-gray-700 mb-2"
               >
                 Your Name
@@ -36,13 +74,15 @@ const CustomerReview = () => {
                 id="ReviewName"
                 type="text"
                 name="ReviewName"
+                value={name}
                 placeholder="Write your name..."
+                onChange={(e) => setName(e.target.value)}
                 className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-1 focus:ring-blue focus:border-transparent transition-all"
               />
             </div>
             <div className="mb-6">
               <label
-                for="ReviewContent"
+                htmlFor="ReviewContent"
                 className="block text-sm font-medium text-gray-700 mb-2"
               >
                 Your Review
@@ -52,6 +92,8 @@ const CustomerReview = () => {
                 name="ReviewContent"
                 id="ReviewContent"
                 rows="6"
+                value={review}
+                onChange={(e) => setReview(e.target.value)}
                 className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-1 focus:ring-blue focus:border-transparent transition-all resize-none"
               ></textarea>
             </div>
@@ -62,6 +104,7 @@ const CustomerReview = () => {
               <button
                 type="button"
                 className="flex-1 sm:flex-none px-6 py-3 border border-gray-300 text-gray-700 rounded-lg hover:bg-gray-50 cursor-pointer transition-colors"
+                onClick={clearForm}
               >
                 Clear the form
               </button>
