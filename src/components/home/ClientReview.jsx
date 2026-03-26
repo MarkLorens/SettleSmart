@@ -1,4 +1,18 @@
+import { Link } from "react-router-dom";
+import { getApprovedReviews } from "../../service/ReviewService";
+import { useEffect, useState } from "react";
+
 const ClientReview = () => {
+  const [reviews, setReviews] = useState([]);
+  useEffect(() => {
+    const fetchData = async () => {
+      const data = await getApprovedReviews();
+      setReviews(data);
+    };
+
+    fetchData();
+  }, []);
+
   return (
     <section id="ClientReviewSection" className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-6">
@@ -11,57 +25,36 @@ const ClientReview = () => {
           </p>
         </div>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 text-white">
-          <div
-            id="Review1"
-            className="bg-blue p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-shadow"
-          >
-            <h4 className="font-semibold mb-2">John Doe</h4>
-            <div className="flex mb-4">
-              <i className="fa-solid fa-star text-gold"></i>
-              <i className="fa-solid fa-star text-gold"></i>
-              <i className="fa-solid fa-star text-gold"></i>
-              <i className="fa-solid fa-star text-gold"></i>
-              <i className="fa-solid fa-star text-gold"></i>
+          {reviews.length > 0 ? (
+            reviews.map((review) => (
+              <div
+                key={review.id}
+                className="bg-blue p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-shadow"
+              >
+                <h4 className="font-semibold mb-2">{review.name}</h4>
+                <div className="flex mb-4">
+                  {[...Array(5)].map((_, i) => (
+                    <i
+                      key={i}
+                      className={`fa-solid fa-star ${
+                        i < review.rating ? "text-gold" : "text-gray-500"
+                      }`}
+                    ></i>
+                  ))}
+                </div>
+                <p className="tracking-wider font-light font-montserrat">
+                  {review.reviewContent}
+                </p>
+              </div>
+            ))
+          ) : (
+            <div>
+              <p>
+                Help us by leaving a review in{" "}
+                <Link to={"/customerreview"}>Customer Review page</Link>
+              </p>
             </div>
-            <p className="tracking-wider font-light font-montserrat">
-              Sion helped us plan for retirement and we're now on track to
-              retire 5 years earlier than expected. His expertise is invaluable.
-            </p>
-          </div>
-          <div
-            id="Review2"
-            className="bg-blue p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-shadow"
-          >
-            <h4 className="font-semibold mb-2">Michael P</h4>
-            <div className="flex mb-4">
-              <i className="fa-solid fa-star text-gold"></i>
-              <i className="fa-solid fa-star text-gold"></i>
-              <i className="fa-solid fa-star text-gold"></i>
-              <i className="fa-solid fa-star text-gold"></i>
-              <i className="fa-regular fa-star text-white"></i>
-            </div>
-            <p className="tracking-wider font-light font-montserrat">
-              The investment strategy Sion created for us has outperformed the
-              market consistently. We couldn't be happier!
-            </p>
-          </div>
-          <div
-            id="Review3"
-            className="bg-blue p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-shadow"
-          >
-            <h4 className="font-semibold mb-2">Christine S</h4>
-            <div className="flex mb-4">
-              <i className="fa-solid fa-star text-gold"></i>
-              <i className="fa-solid fa-star text-gold"></i>
-              <i className="fa-solid fa-star text-gold"></i>
-              <i className="fa-solid fa-star text-gold"></i>
-              <i className="fa-solid fa-star text-gold"></i>
-            </div>
-            <p className="tracking-wider font-light font-montserrat">
-              Professional, knowledgeable, and always available when we need
-              advice. Sion truly cares about our financial success.
-            </p>
-          </div>
+          )}
         </div>
       </div>
     </section>
