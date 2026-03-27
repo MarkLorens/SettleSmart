@@ -7,31 +7,29 @@ const CustomerReview = () => {
   const [hover, setHover] = useState(0);
   const [name, setName] = useState("");
   const [reviewContent, setReviewContent] = useState("");
-  const [createdAt, setCreatedAt] = useState("");
+  const [errorMsg, setErrorMsg] = useState("");
 
   const clearForm = () => {
     setRating(0);
     setHover(0);
     setName("");
     setReview("");
+    setErrorMsg("");
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    if (rating === "" || name === "" || reviewContent === "") {
+      setErrorMsg("Please fill in all the field");
+    } else {
+      const reviewData = {
+        rating,
+        name,
+        reviewContent,
+      };
 
-    const now = Date.now();
-    setCreatedAt(now);
-
-    console.log(createdAt);
-
-    const reviewData = {
-      rating,
-      name,
-      reviewContent,
-      createdAt,
-    };
-
-    createReview(reviewData);
+      createReview(reviewData);
+    }
   };
 
   return (
@@ -106,6 +104,13 @@ const CustomerReview = () => {
                 className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-1 focus:ring-blue focus:border-transparent transition-all resize-none"
               ></textarea>
             </div>
+            {errorMsg ? (
+              <div>
+                <p className="text-red-500 text-sm font-light">{errorMsg}</p>
+              </div>
+            ) : (
+              <div></div>
+            )}
             <div
               id="FormActions"
               className="flex flex-col sm:flex-row gap-4 pt-6 border-t border-gray-200"

@@ -1,5 +1,12 @@
 import { db } from "../firebase";
-import { collection, addDoc, getDocs, query, where } from "firebase/firestore";
+import {
+  collection,
+  addDoc,
+  getDocs,
+  query,
+  where,
+  serverTimestamp,
+} from "firebase/firestore";
 
 export const getApprovedReviews = async () => {
   const q = query(collection(db, "Reviews"), where("approval", "==", true));
@@ -15,5 +22,6 @@ export const createReview = async (review) => {
   return addDoc(collection(db, "Reviews"), {
     ...review,
     approval: false,
+    createdAt: serverTimestamp(),
   });
 };
