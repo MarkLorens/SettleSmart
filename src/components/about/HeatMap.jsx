@@ -54,7 +54,7 @@ const HeatMap = () => {
                   <div className="text-white">
                     <div className="font-semibold text-lg">Pakistan</div>
                     <div className="text-blue-200 text-sm">
-                      Specialized in NRI financial planning
+                      Wealth structuring for overseas Pakistanis
                     </div>
                   </div>
                 </div>
@@ -69,7 +69,7 @@ const HeatMap = () => {
                   <div className="text-white">
                     <div className="font-semibold text-lg">Nigeria</div>
                     <div className="text-blue-200 text-sm">
-                      Specialized in NRI financial planning
+                      Remittance optimization and asset growth solutions
                     </div>
                   </div>
                 </div>
@@ -99,7 +99,7 @@ const HeatMap = () => {
                   <div className="text-white">
                     <div className="font-semibold text-lg">South Africa</div>
                     <div className="text-blue-200 text-sm">
-                      Specialized in NRI financial planning
+                      International portfolio diversification advisory
                     </div>
                   </div>
                 </div>
