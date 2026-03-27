@@ -11,7 +11,7 @@ const AboutCTA = () => {
         <h2 className="text-4xl font-bold mb-6 font-oswald text-white">
           Ready to Take Control of Your Financial Future?
         </h2>
-        <p className="text-xl text-blue-100 font-extralight mb-10 leading-relaxed max-w-3xl mx-auto">
+        <p className="text-xl text-blue-100 font-extralight mb-10 leading-relaxed max-w-3xl mx-auto font-montserrat">
           Let's have a conversation about your goals. An honest advice from
           someone who's been in your shoes.
         </p>

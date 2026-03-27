@@ -45,7 +45,7 @@ const CustomerReview = () => {
             Share your experience and help others make informed decisions
           </p>
         </div>
-        <div className="bg-white rounded-xl shadow-sm border border-gray-200 overflow-hidden">
+        <div className="bg-white rounded-xl shadow-sm border border-gray-200 overflow-hidden font-montserrat">
           <div className="p-6 border-b border-gray-200 bg-gray-50 z-99">
             <h3 className="mb-6 text-2xl font-bold">Overall Rating</h3>
             <div

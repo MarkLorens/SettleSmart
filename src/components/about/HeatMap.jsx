@@ -27,7 +27,7 @@ const HeatMap = () => {
                 understand the unique financial challenges faced by expats from
                 different cultural and economic backgrounds.{" "}
               </p>
-              <div className="space-y-4">
+              <div className="space-y-4 font-montserrat">
                 <div
                   onMouseEnter={() => setActiveCountry("india")}
                   onMouseLeave={() => setActiveCountry(null)}

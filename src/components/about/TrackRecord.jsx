@@ -11,7 +11,7 @@ const TrackRecord = () => {
           </h2>
           <p className="text-xl text-gray-600">Real results for real people</p>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 font-montserrat">
           <div
             id="AchievementCard1"
             className="bg-white rounded-2xl p-10 shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border-t-4 border-blue-800 cursor-pointer"
