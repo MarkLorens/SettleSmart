@@ -10,3 +10,10 @@ export const getApprovedReviews = async () => {
     ...doc.data(),
   }));
 };
+
+export const createReview = async (review) => {
+  return addDoc(collection(db, "Reviews"), {
+    ...review,
+    approval: false,
+  });
+};

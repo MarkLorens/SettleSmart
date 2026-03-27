@@ -1,10 +1,13 @@
 import { useState } from "react";
 import Navbar from "../components/Navbar";
+import { createReview } from "../service/ReviewService";
+
 const CustomerReview = () => {
   const [rating, setRating] = useState(0);
   const [hover, setHover] = useState(0);
   const [name, setName] = useState("");
-  const [review, setReview] = useState("");
+  const [reviewContent, setReviewContent] = useState("");
+  const [createdAt, setCreatedAt] = useState("");
 
   const clearForm = () => {
     setRating(0);
@@ -16,13 +19,19 @@ const CustomerReview = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
+    const now = Date.now();
+    setCreatedAt(now);
+
+    console.log(createdAt);
+
     const reviewData = {
       rating,
       name,
-      review,
+      reviewContent,
+      createdAt,
     };
 
-    console.log(reviewData);
+    createReview(reviewData);
   };
 
   return (
@@ -62,7 +71,7 @@ const CustomerReview = () => {
               {rating ? `You rated ${rating}/5` : "Rate the experience"}
             </p>
           </div>
-          <form action={handleSubmit} id="ReviewForm" className="p-6">
+          <form onSubmit={handleSubmit} id="ReviewForm" className="p-6">
             <div className="mb-6">
               <label
                 htmlFor="ReviewName"
@@ -92,8 +101,8 @@ const CustomerReview = () => {
                 name="ReviewContent"
                 id="ReviewContent"
                 rows="6"
-                value={review}
-                onChange={(e) => setReview(e.target.value)}
+                value={reviewContent}
+                onChange={(e) => setReviewContent(e.target.value)}
                 className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-1 focus:ring-blue focus:border-transparent transition-all resize-none"
               ></textarea>
             </div>

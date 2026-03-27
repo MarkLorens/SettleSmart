@@ -14,7 +14,10 @@ const Navbar = () => {
       <div className="px-6 max-h-20 relative">
         <div className="flex justify-between items-center max-h-20">
           <div id="Logo">
-            <img src={SmallLogo} className="h-50 w-auto cursor-pointer" />
+            <img
+              src={SmallLogo}
+              className="h-40 lg:h-50 w-auto cursor-pointer"
+            />
           </div>
           <nav
             id="Items"
