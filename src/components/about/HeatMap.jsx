@@ -3,8 +3,6 @@ import WorldMap from "/world.svg";
 
 const HeatMap = () => {
   const [activeCountry, setActiveCountry] = useState(null);
-
-  function hoverToPin(country) {}
   return (
     <section id="HeatMap" className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-6">
@@ -46,6 +44,36 @@ const HeatMap = () => {
                   </div>
                 </div>
                 <div
+                  onMouseEnter={() => setActiveCountry("pakistan")}
+                  onMouseLeave={() => setActiveCountry(null)}
+                  className="flex items-center space-x-4 bg-blue-800 bg-opacity-50 rounded-xl p-4 cursor-pointer"
+                >
+                  <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center shrink-0">
+                    <i className="fa-solid fa-flag text-blue-700 text-xl"></i>
+                  </div>
+                  <div className="text-white">
+                    <div className="font-semibold text-lg">Pakistan</div>
+                    <div className="text-blue-200 text-sm">
+                      Specialized in NRI financial planning
+                    </div>
+                  </div>
+                </div>
+                <div
+                  onMouseEnter={() => setActiveCountry("nigeria")}
+                  onMouseLeave={() => setActiveCountry(null)}
+                  className="flex items-center space-x-4 bg-blue-800 bg-opacity-50 rounded-xl p-4 cursor-pointer"
+                >
+                  <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center shrink-0">
+                    <i className="fa-solid fa-flag text-blue-700 text-xl"></i>
+                  </div>
+                  <div className="text-white">
+                    <div className="font-semibold text-lg">Nigeria</div>
+                    <div className="text-blue-200 text-sm">
+                      Specialized in NRI financial planning
+                    </div>
+                  </div>
+                </div>
+                <div
                   onMouseEnter={() => setActiveCountry("indonesia")}
                   onMouseLeave={() => setActiveCountry(null)}
                   className="flex items-center space-x-4 bg-blue-800 bg-opacity-50 rounded-xl p-4 cursor-pointer"
@@ -61,7 +89,7 @@ const HeatMap = () => {
                   </div>
                 </div>
                 <div
-                  onMouseEnter={() => setActiveCountry("us")}
+                  onMouseEnter={() => setActiveCountry("safrica")}
                   onMouseLeave={() => setActiveCountry(null)}
                   className="flex items-center space-x-4 bg-blue-800 bg-opacity-50 rounded-xl p-4 cursor-pointer"
                 >
@@ -69,29 +97,14 @@ const HeatMap = () => {
                     <i className="fa-solid fa-flag text-blue-700 text-xl"></i>
                   </div>
                   <div className="text-white">
-                    <div className="font-semibold text-lg">United States</div>
+                    <div className="font-semibold text-lg">South Africa</div>
                     <div className="text-blue-200 text-sm">
-                      US tax compliance & optimization
+                      Specialized in NRI financial planning
                     </div>
                   </div>
                 </div>
                 <div
-                  onMouseEnter={() => setActiveCountry("uk")}
-                  onMouseLeave={() => setActiveCountry(null)}
-                  className="flex items-center space-x-4 bg-blue-800 bg-opacity-50 rounded-xl p-4 cursor-pointer"
-                >
-                  <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center shrink-0">
-                    <i className="fa-solid fa-flag text-blue-700 text-xl"></i>
-                  </div>
-                  <div className="text-white">
-                    <div className="font-semibold text-lg">United Kingdom</div>
-                    <div className="text-blue-200 text-sm">
-                      UK pension & savings guidance
-                    </div>
-                  </div>
-                </div>
-                <div
-                  onMouseEnter={() => setActiveCountry("sa")}
+                  onMouseEnter={() => setActiveCountry("samerica")}
                   onMouseLeave={() => setActiveCountry(null)}
                   className="flex items-center space-x-4 bg-blue-800 bg-opacity-50 rounded-xl p-4 cursor-pointer"
                 >
@@ -112,13 +125,31 @@ const HeatMap = () => {
                 <img
                   src={WorldMap}
                   alt="World map image"
-                  className="w-full h-full object-cover"
+                  className="w-auto h-60 object-cover"
                 />
                 {/* India */}
                 <div
                   id="IndiaPin"
                   className={`absolute w-3 h-3 bg-gold rounded-full top-[40%] left-[70%] transition-all duration-300 
                     ${activeCountry === "india" ? "w-6 h-6" : "w-3 h-3"}`}
+                >
+                  <span className="absolute inset-0 rounded-full bg-blue-600 animate-ping"></span>
+                </div>
+
+                {/* Pakistan */}
+                <div
+                  id="PakistanPin"
+                  className={`absolute w-3 h-3 bg-gold rounded-full top-[34%] left-[67%] transition-all duration-300 
+                    ${activeCountry === "pakistan" ? "w-6 h-6" : "w-3 h-3"}`}
+                >
+                  <span className="absolute inset-0 rounded-full bg-blue-600 animate-ping"></span>
+                </div>
+
+                {/* Nigeria */}
+                <div
+                  id="NigeriaPin"
+                  className={`absolute w-3 h-3 bg-gold rounded-full top-[50%] left-[50%] transition-all duration-300 
+                    ${activeCountry === "nigeria" ? "w-6 h-6" : "w-3 h-3"}`}
                 >
                   <span className="absolute inset-0 rounded-full bg-blue-600 animate-ping"></span>
                 </div>
@@ -132,20 +163,11 @@ const HeatMap = () => {
                   <span className="absolute inset-0 rounded-full bg-blue-600 animate-ping"></span>
                 </div>
 
-                {/* US */}
+                {/* South Africa */}
                 <div
                   id="USPin"
-                  className={`absolute w-3 h-3 bg-gold rounded-full top-[27%] left-[22%] transition-all duration-300
-                    ${activeCountry === "us" ? "w-6 h-6" : "w-3 h-3"}`}
-                >
-                  <span className="absolute inset-0 rounded-full bg-blue-600 animate-ping"></span>
-                </div>
-
-                {/* UK */}
-                <div
-                  id="UKPin"
-                  className={`absolute w-3 h-3 bg-gold rounded-full top-[16%] left-[47%] transition-all duration-300
-                    ${activeCountry === "uk" ? "w-6 h-6" : "w-3 h-3"}`}
+                  className={`absolute w-3 h-3 bg-gold rounded-full top-[50%] left-[55%] transition-all duration-300
+                    ${activeCountry === "safrica" ? "w-6 h-6" : "w-3 h-3"}`}
                 >
                   <span className="absolute inset-0 rounded-full bg-blue-600 animate-ping"></span>
                 </div>
@@ -154,7 +176,7 @@ const HeatMap = () => {
                 <div
                   id="SAPin"
                   className={`absolute w-3 h-3 bg-gold rounded-full top-[65%] left-[32%] transition-all duration-300
-                    ${activeCountry === "sa" ? "w-6 h-6" : "w-3 h-3"}`}
+                    ${activeCountry === "samerica" ? "w-6 h-6" : "w-3 h-3"}`}
                 >
                   <span className="absolute inset-0 rounded-full bg-blue-600 animate-ping"></span>
                 </div>
@@ -163,17 +185,6 @@ const HeatMap = () => {
           </div>
         </div>
       </div>
-      {/*
-
-      <div className="relative">
-        <img src={WorldMap} alt="World map showing global clients" />
-
-        <div className="absolute w-3 h-3 bg-blue-600 rounded-full top-[40%] left-[47%]" />
-
-        <div className="absolute w-3 h-3 bg-blue-600 rounded-full top-[50%] left-[65%]" />
-
-        <div className="absolute w-3 h-3 bg-blue-600 rounded-full top-[45%] left-[30%]" />
-      </div> */}
     </section>
   );
 };

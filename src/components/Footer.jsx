@@ -7,10 +7,11 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto px-6">
         <div className="flex flex-col gap-12 md:flex-row md:justify-between md:items-start">
           <div className="flex justify-center md:justify-start">
-            <img
-              src={FooterLogo}
-              alt="SettleSmartFooterLogo"
-              className="
+            <Link to={"/"}>
+              <img
+                src={FooterLogo}
+                alt="SettleSmartFooterLogo"
+                className="
       max-h-52
       scale-125
       sm:scale-110
@@ -18,7 +19,8 @@ const Footer = () => {
       lg:scale-150
       origin-center md:origin-left
     "
-            />
+              />
+            </Link>
           </div>
           <div>
             <h4 className="font-semibold text-xl md:text-2xl mb-6 md:mb-8 font-oswald tracking-wide">

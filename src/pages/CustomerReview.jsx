@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Navbar from "../components/Navbar";
 import { createReview } from "../service/ReviewService";
+import Footer from "../components/Footer";
 
 const CustomerReview = () => {
   const [rating, setRating] = useState(0);
@@ -33,7 +34,7 @@ const CustomerReview = () => {
   };
 
   return (
-    <section id="ReviewSection" className="bg-gray-50 flex">
+    <section id="ReviewSection" className="bg-gray-50 flex flex-col">
       <Navbar />
       <div className="max-w-4xl mx-auto mt-30 px-4 smL:px-6 lg:px-6 py-8 w-full">
         <div className="mb-8">
@@ -132,6 +133,7 @@ const CustomerReview = () => {
           </form>
         </div>
       </div>
+      <Footer />
     </section>
   );
 };
