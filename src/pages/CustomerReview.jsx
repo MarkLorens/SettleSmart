@@ -14,13 +14,13 @@ const CustomerReview = () => {
     setRating(0);
     setHover(0);
     setName("");
-    setReview("");
+    setReviewContent("");
     setErrorMsg("");
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (rating === "" || name === "" || reviewContent === "") {
+    if (rating === 0 || name === "" || reviewContent === "") {
       setErrorMsg("Please fill in all the field");
     } else {
       const reviewData = {
@@ -30,6 +30,13 @@ const CustomerReview = () => {
       };
 
       createReview(reviewData);
+      setRating(0);
+      setHover(0);
+      setName("");
+      setReviewContent("");
+      setErrorMsg("");
+
+      alert("Thank you for submitting a review " + name + "!");
     }
   };
 
