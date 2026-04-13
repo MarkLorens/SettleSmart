@@ -52,16 +52,29 @@ const Footer = () => {
               Where to Find Us
             </h4>
             <div className="space-y-3 md:space-y-4 text-lg md:text-xl text-gray-400 font-montserrat">
-              <p className="cursor-pointer hover:text-white transition-colors">
+              <a
+                href="https://wa.me/4915234637712"
+                className="cursor-pointer block hover:text-white transition-colors"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
                 <i className="fa-solid fa-address-book mr-4"></i>Contact Number
-              </p>
-              <p className="cursor-pointer hover:text-white transition-colors">
+              </a>
+              <a
+                href="mailto:sion.jeremi@horbach.de"
+                className="cursor-pointer block hover:text-white transition-colors"
+              >
                 <i className="fa-solid fa-envelope mr-4"></i>Email
-              </p>
-              <p className="cursor-pointer hover:text-white transition-colors">
+              </a>
+              <a
+                href="https://www.instagram.com/settlesmart.de/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="cursor-pointer block hover:text-white transition-colors"
+              >
                 <i className="fa-brands fa-instagram mr-4"></i>Instagram
-              </p>
-              <p className="cursor-pointer hover:text-white transition-colors">
+              </a>
+              <p className="cursor-pointer block hover:text-white transition-colors">
                 <i className="fa-solid fa-location-dot mr-4"></i>
                 Physical Address
               </p>

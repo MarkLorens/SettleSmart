@@ -23,7 +23,7 @@ const CTA = () => {
               </div>
 
               <button className="bg-gold text-white px-8 py-4 rounded-lg hover:bg-gold/80 transition-colors text-lg font-semibold cursor-pointer self-start mx-auto lg:mx-0">
-                Book a Consultation
+                Start with a 15 Minutes Intro Call
               </button>
             </div>
           </div>

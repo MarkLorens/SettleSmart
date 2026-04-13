@@ -39,7 +39,7 @@ const HeatMap = () => {
                   <div className="text-white">
                     <div className="font-semibold text-lg">India</div>
                     <div className="text-blue-200 text-sm">
-                      Specialized in NRI financial planning
+                      Supporting with structured financial planning and cross-border wealth coordination.
                     </div>
                   </div>
                 </div>
@@ -54,7 +54,7 @@ const HeatMap = () => {
                   <div className="text-white">
                     <div className="font-semibold text-lg">Pakistan</div>
                     <div className="text-blue-200 text-sm">
-                      Wealth structuring for overseas Pakistanis
+                      Assisting with wealth structuring and international financial integration.
                     </div>
                   </div>
                 </div>
@@ -69,7 +69,7 @@ const HeatMap = () => {
                   <div className="text-white">
                     <div className="font-semibold text-lg">Nigeria</div>
                     <div className="text-blue-200 text-sm">
-                      Remittance optimization and asset growth solutions
+                      Helping Nigerian expatriates in Germany optimize remittances while building sustainable assets abroad.
                     </div>
                   </div>
                 </div>
@@ -84,7 +84,7 @@ const HeatMap = () => {
                   <div className="text-white">
                     <div className="font-semibold text-lg">Indonesia</div>
                     <div className="text-blue-200 text-sm">
-                      Cross-border investment strategies
+                      Guiding Indonesian clients in Germany through cross-border investments and financial system navigation.
                     </div>
                   </div>
                 </div>
@@ -99,7 +99,7 @@ const HeatMap = () => {
                   <div className="text-white">
                     <div className="font-semibold text-lg">South Africa</div>
                     <div className="text-blue-200 text-sm">
-                      International portfolio diversification advisory
+                      Advising On global portfolio diversification and long-term wealth strategies.
                     </div>
                   </div>
                 </div>
@@ -114,7 +114,7 @@ const HeatMap = () => {
                   <div className="text-white">
                     <div className="font-semibold text-lg">South America</div>
                     <div className="text-blue-200 text-sm">
-                      Currency risk management
+                      Supporting with currency risk management and financial stability planning.
                     </div>
                   </div>
                 </div>

@@ -24,7 +24,7 @@ const ClientReview = () => {
             Stories from our satisfied clients
           </p>
         </div>
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 text-white">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-8 text-white">
           {reviews.length > 0 ? (
             reviews.map((review) => (
               <div
@@ -55,6 +55,11 @@ const ClientReview = () => {
               </p>
             </div>
           )}
+        </div>
+        <div className="flex mr-4">
+          <Link to="/customerreview" className="ml-auto bg-gold text-white p-4 rounded-lg ext-lg hover:bg-gold/90 transition-colors cursor-pointer">
+            Leave a Review
+          </Link>
         </div>
       </div>
     </section>

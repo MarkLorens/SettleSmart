@@ -1,7 +1,8 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Navbar from "../components/Navbar";
 import { createReview } from "../service/ReviewService";
 import Footer from "../components/Footer";
+import { getApprovedReviews } from "../service/ReviewService";
 
 const CustomerReview = () => {
   const [rating, setRating] = useState(0);
@@ -9,6 +10,16 @@ const CustomerReview = () => {
   const [name, setName] = useState("");
   const [reviewContent, setReviewContent] = useState("");
   const [errorMsg, setErrorMsg] = useState("");
+  const [reviews, setReviews] = useState([]);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      const data = await getApprovedReviews();
+      setReviews(data);
+    };
+
+    fetchData();
+  }, []);
 
   const clearForm = () => {
     setRating(0);
@@ -43,8 +54,38 @@ const CustomerReview = () => {
   return (
     <section id="ReviewSection" className="bg-gray-50 flex flex-col">
       <Navbar />
-      <div className="max-w-4xl mx-auto mt-30 px-4 smL:px-6 lg:px-6 py-8 w-full">
-        <div className="mb-8">
+      <div className="max-w-7xl mx-auto mt-30 px-4 smL:px-6 lg:px-6 py-8 w-full">
+        <div className="flex mb-8 mr-4">
+          <a
+            href="#ReviewForm"
+            className="ml-auto bg-gold text-white p-4 rounded-lg ext-lg hover:bg-gold/90 transition-colors cursor-pointer"
+          >
+            Go to the form
+          </a>
+        </div>
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 text-white mb-16">
+          {reviews.map((review) => (
+            <div
+              key={review.id}
+              className="bg-blue p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-shadow"
+            >
+              <h4 className="font-semibold mb-2">{review.name}</h4>
+              <div className="flex mb-4">
+                {[...Array(5)].map((_, i) => (
+                  <i
+                    key={i}
+                    className={`fa-solid fa-star ${i < review.rating ? "text-gold" : "text-gray-500"
+                      }`}
+                  ></i>
+                ))}
+              </div>
+              <p className="tracking-wider font-light font-montserrat">
+                {review.reviewContent}
+              </p>
+            </div>
+          ))}
+        </div>
+        <div className="mb-8" id="ReviewForm">
           <h3 className="text-3xl font-bold text-gray-900 mb-2 font-oswald">
             Leave a Review
           </h3>
@@ -65,9 +106,8 @@ const CustomerReview = () => {
               {[1, 2, 3, 4, 5].map((star) => (
                 <button
                   key={star}
-                  className={`fa-solid fa-star cursor-pointer text-xl ${
-                    star <= (hover || rating) ? "text-gold" : "text-gray-600"
-                  }`}
+                  className={`fa-solid fa-star cursor-pointer text-xl ${star <= (hover || rating) ? "text-gold" : "text-gray-600"
+                    }`}
                   onMouseEnter={() => setHover(star)}
                   onClick={() => setRating(star)}
                 ></button>
