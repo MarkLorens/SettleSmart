@@ -53,12 +53,12 @@ const Navbar = () => {
               Customer Review
             </NavLink>
           </nav>
-          <button
+          <NavLink to="/contactform"
             className="hidden md:block bg-gold text-white px-8 py-4 rounded-4xl
                              hover:bg-gold/80 transition font-semibold cursor-pointer"
           >
             Contact
-          </button>
+          </NavLink>
 
           {/* Hamburger */}
           <button

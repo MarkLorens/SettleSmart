@@ -54,7 +54,7 @@ const CustomerReview = () => {
   return (
     <section id="ReviewSection" className="bg-gray-50 flex flex-col">
       <Navbar />
-      <div className="max-w-7xl mx-auto mt-30 px-4 smL:px-6 lg:px-6 py-8 w-full">
+      <div className="max-w-7xl mx-auto mt-30 px-4 sm:px-6 lg:px-6 py-8 w-full">
         <div className="flex mb-8 mr-4">
           <a
             href="#ReviewForm"
