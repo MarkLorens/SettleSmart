@@ -250,7 +250,7 @@ const PrivacyPoulcy = () => {
                     </Section>
                 </div>
             </div>
-            {/* <Footer /> */}
+            <Footer />
         </section>
     );
 }
