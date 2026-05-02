@@ -3,6 +3,7 @@ import About from "./pages/About";
 import { Routes, Route, BrowserRouter } from "react-router-dom";
 import CustomerReview from "./pages/CustomerReview";
 import ContactForm from "./pages/ContactForm";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/customerreview" element={<CustomerReview />} />
         <Route path="/contactform" element={<ContactForm />} />
+        <Route path="/privacypolicy" element={<PrivacyPolicy />} />
       </Routes>
     </BrowserRouter>
   );

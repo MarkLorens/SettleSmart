@@ -83,6 +83,7 @@ const Footer = () => {
         </div>
         <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-600">
           © 2025 SettleSmart Financial Advisory. All rights reserved.
+          <a href="/privacypolicy" className="block cursor-pointer hover:underline">Privacy Policy</a>
         </div>
       </div>
     </section>
