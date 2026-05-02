@@ -104,12 +104,12 @@ const Navbar = () => {
               Customer Review
             </NavLink>
 
-            <button
+            <NavLink to="/contactform"
               className="mt-2 bg-gold text-white py-3 rounded-2xl
                                hover:bg-gold/80 transition cursor-pointer"
             >
               Contact
-            </button>
+            </NavLink>
           </div>
         )}
       </div>
