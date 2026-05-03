@@ -1,8 +1,9 @@
 import { useState, useEffect } from "react";
-import Navbar from "../components/Navbar";
+import Navbar from "../components/helper/Navbar";
 import { createReview } from "../service/ReviewService";
-import Footer from "../components/Footer";
+import Footer from "../components/helper/Footer";
 import { getApprovedReviews } from "../service/ReviewService";
+import SuccessDialogue from "../components/helper/SuccessDialogue";
 
 const CustomerReview = () => {
   const [rating, setRating] = useState(0);
@@ -46,13 +47,16 @@ const CustomerReview = () => {
       setName("");
       setReviewContent("");
       setErrorMsg("");
-
-      alert("Thank you for submitting a review " + name + "!");
+      setShowSuccess(true);
     }
   };
 
+  // Dialogue box
+  const [showSuccess, setShowSuccess] = useState(false);
+
   return (
     <section id="ReviewSection" className="bg-gray-50 flex flex-col">
+      <SuccessDialogue isOpen={showSuccess} onClose={() => setShowSuccess(false)} dialogueMessage={"Your review has been submitted and pending for approval! You will see it here soon."} />
       <Navbar />
       <div className="max-w-7xl mx-auto mt-30 px-4 sm:px-6 lg:px-6 py-8 w-full">
         <div className="flex mb-8 mr-4">

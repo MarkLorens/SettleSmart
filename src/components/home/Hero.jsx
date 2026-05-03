@@ -1,5 +1,5 @@
 import HeroPic from "../../assets/HeroPicture.png";
-import Navbar from "../Navbar";
+import Navbar from "../helper/Navbar";
 const Hero = () => {
   return (
     <section

@@ -1,4 +1,4 @@
-import Navbar from "../Navbar";
+import Navbar from "../helper/Navbar";
 import HeroPic from "../../assets/about/AboutHeroPicture.png";
 
 const Hero = () => {

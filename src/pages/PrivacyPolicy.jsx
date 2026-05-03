@@ -1,6 +1,6 @@
-import Footer from "../components/Footer";
-import Navbar from "../components/Navbar";
-import Section from "../components/Section";
+import Footer from "../components/helper/Footer";
+import Navbar from "../components/helper/Navbar";
+import Section from "../components/helper/Section";
 
 const PrivacyPoulcy = () => {
     return (

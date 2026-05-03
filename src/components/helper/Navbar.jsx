@@ -1,4 +1,4 @@
-import SmallLogo from "../assets/SS-Logo-Footer.png";
+import SmallLogo from "../../assets/SS-Logo-Footer.png";
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
 

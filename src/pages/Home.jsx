@@ -1,4 +1,4 @@
-import Footer from "../components/Footer";
+import Footer from "../components/helper/Footer";
 import ClientReview from "../components/home/ClientReview";
 import CTA from "../components/home/CTA";
 import FAQ from "../components/home/FAQ";
